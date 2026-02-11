@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Princess</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:black;
+color:white;
+overflow:hidden;
+}
+
+.section{
+display:none;
+height:100vh;
+padding:20px;
+text-align:center;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.active{
+display:flex;
+}
+
+h1{
+color:#fff770;
+margin-bottom:15px;
+}
+
+p{
+font-size:18px;
+max-width:350px;
+}
+
+img{
+width:220px;
+margin-top:15px;
+border-radius:15px;
+}
+
+button{
+margin-top:25px;
+padding:12px 30px;
+font-size:18px;
+border:none;
+border-radius:25px;
+background:#ff4d6d;
+color:white;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="section active">
+<h1>A little virtual Valentine's Day gift for you.....💗</h1>
+<button onclick="nextSection()">Next ➡️</button>
+</div>
+
+<div class="section">
+<h1>Happiest Rose Day Baby 🌹</h1>
+<p>Mere es pyare se phool ke liye gulab ka phool 🌹</p>
+<img src="rose.gif">
+<button onclick="nextSection()">Next ➡️</button>
+</div>
+
+<div class="section">
+<h1>Proposal Time 💍</h1>
+<p>
+You know I'm going to propose you darling 😘<br>
+I love you sweetheart...<br>
+Would you like to be mine forever?? 💗
+</p>
+<img src=proposal.gif>
+<button onclick="nextSection()">Next ➡️</button>
+</div>
+
+<div class="section">
+<h1>Chocolate Day 🍫</h1>
+<p>Mere sweetheart ke liye ek chocolate is chocolate day pr  🍫</p>
+<img src="chocolate.gif">
+<button onclick="nextSection()">Next ➡️</button>
+</div>
+
+<div class="section">
+<h1>Hello My Teddy Bear 🧸</h1>
+<p>I've a teddy for you 🧸</p>
+<img src="teddy.gif">
+<button onclick="nextSection()">Next ➡️</button>
+</div>
+
+<div class="section">
+<h1>Promise Day 💌</h1>
+<p>
+Hey janaa.. aaj promise day hai<br>
+So I promise you that I'll never leave you..<br>
+and you'll always be my first priority ☺️
+</p>
+<button onclick="nextSection()">Next ➡️</button>
+</div>
+
+<div class="section">
+<h1>Kiss Day 😘</h1>
+<p>A lots of kisses for you 😘</p>
+<img src="kiss.gif">
+<button onclick="nextSection()">Next ➡️</button>
+</div>
+
+<div class="section">
+<h1>Hug Day 🤗</h1>
+<p>A virtual hug for you 🤗</p>
+<img src="hug.gif">
+<button onclick="nextSection()">Next ➡️</button>
+</div>
+
+<div class="section">
+<h1>Happy Valentine's Day My Love 💗😘</h1>
+<p>
+<h3>
+Again we're celebrating this day in a long distance 😩 
+                     Haan mujhe pta h ap mko boht miss krti h mdmji..  I also miss you too... Pr hum ky kr skte h😒 we have to move on with time🥲
+
+I know m aj ap hostel ja rh h... I wish ap wha comfortable rhngi thik s khayngi, piyengi apna dhayn rkhngi.. 
+
+Mko pta h ki y Canva site m apko 14th FEBRUARY k pehle bhej rh qki mujhe pta h ap hostel m rhngi wha apk ps koi device ni rhega😒🥲  I wish ki ap valentine's day k din mera y sms yd krngi🙂🙃🙂 
+
+
+I love so much my princess 👑😚
+
+You will always be my first priority ☺️ and my princess 👑 also ....
+
+Again, VERY VERY HAPPY VALENTINE'S DAY SWEETIE😘😘
+</h3>
+</p>
+</div>
+
+<script>
+let index = 0;
+const allSections = document.querySelectorAll(".section");
+
+function nextSection(){
+allSections[index].classList.remove("active");
+index++;
+if(index < allSections.length){
+allSections[index].classList.add("active");
+}
+}
+</script>
+
+</body>
+</html>
